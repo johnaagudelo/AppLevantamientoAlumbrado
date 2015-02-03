@@ -9,20 +9,18 @@
 
 
     <ImageView
-        android:layout_marginTop="100dp"
-        android:layout_marginBottom="30dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/logo_geolumina"/>
+        android:background="@drawable/logo_geolumina" />
 
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:shadowColor="@color/text_primary_color"
-        android:textColorHint="@color/text_primary_color"
-        android:textColor="@color/text_primary_color"
+        android:textColorHint="@color/accent_button"
+        android:textColor="@color/accent_button"
         android:hint="@string/usuario"
+
      />
 
     <EditText
@@ -31,10 +29,9 @@
         android:inputType="textPassword"
         android:id="@+id/editText"
         android:hint="@string/Clave"
-        android:shadowColor="@color/text_primary_color"
-        android:textColorHint="@color/text_primary_color"
-        android:textColor="@color/text_primary_color"
-        android:layout_marginTop="10dp"
+        android:textColorHint="@color/accent_button"
+        android:textColor="@color/accent_button"
+
        />
 
     <Button
@@ -42,17 +39,17 @@
         android:layout_height="wrap_content"
         android:text="Login"
         android:id="@+id/btn_login"
-        android:layout_marginTop="10dp"
-        android:background="@color/accent_button"/>
+        android:background="@color/accent_button"
+        android:textColor="@color/primary_dark"
+        />
 
     <ImageView
-        android:layout_marginTop="100dp"
-        android:layout_marginBottom="30dp"
+        android:layout_marginTop="50dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-
-        android:background="@drawable/logo_sigma"/>
+        android:background="@drawable/logo_sigma"
+        />
 
 
 

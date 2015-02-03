@@ -6,9 +6,6 @@
     </style>
 
     <color name="primary_dark">#0D47A1</color>
-    <color name="primary"></color>
-    <color name="accent"></color>
     <color name="accent_button">#fff</color>
-    <color name="navigation_bar_color"></color>
     <color name="text_primary_color">#E3F2FD</color>
 </resources>
