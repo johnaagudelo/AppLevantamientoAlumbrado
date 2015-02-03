@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Levantamiento Alumbrado Público</string>
+    <string name="action_settings">Settings</string>
+    <string name="usuario">Nombre de Usuario</string>
+    <string name="Clave">Ingrese la clave</string>
+
+
+</resources>
