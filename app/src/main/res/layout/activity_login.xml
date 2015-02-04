@@ -11,7 +11,9 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/logo_geolumina" />
+        android:background="@drawable/logo_geolumina"
+        android:layout_marginBottom="70dp"
+        android:layout_marginTop="30dp"/>
 
 
     <EditText
@@ -20,8 +22,8 @@
         android:textColorHint="@color/accent_button"
         android:textColor="@color/accent_button"
         android:hint="@string/usuario"
-
-     />
+        android:textStyle="normal|bold|italic"
+        android:typeface="serif" />
 
     <EditText
         android:layout_width="match_parent"
@@ -31,8 +33,8 @@
         android:hint="@string/Clave"
         android:textColorHint="@color/accent_button"
         android:textColor="@color/accent_button"
-
-       />
+        android:textStyle="normal|bold|italic"
+        android:typeface="serif" />
 
     <Button
         android:layout_width="match_parent"
@@ -44,7 +46,7 @@
         />
 
     <ImageView
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="80dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
