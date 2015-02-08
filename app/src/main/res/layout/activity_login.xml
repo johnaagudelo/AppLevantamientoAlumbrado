@@ -17,6 +17,7 @@
 
 
     <EditText
+        android:id="@+id/usu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColorHint="@color/accent_button"
@@ -29,7 +30,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPassword"
-        android:id="@+id/editText"
+        android:id="@+id/clave"
         android:hint="@string/Clave"
         android:textColorHint="@color/accent_button"
         android:textColor="@color/accent_button"
@@ -43,6 +44,7 @@
         android:id="@+id/btn_login"
         android:background="@color/accent_button"
         android:textColor="@color/primary_dark"
+        android:onClick="login()"
         />
 
     <ImageView
