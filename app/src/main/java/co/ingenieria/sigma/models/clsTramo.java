@@ -15,17 +15,7 @@ public class clsTramo {
     private String trm_estado;
     private String trm_observ;
 
-    public clsTramo(String trm_apoini, String trm_apofin, String cir_codigo, String trm_congig, String trm_clase, String trm_conduc,
-                    String trm_distan, String trm_estado, String trm_observ) {
-        this.trm_apoini = trm_apoini;
-        this.trm_apofin = trm_apofin;
-        this.cir_codigo = cir_codigo;
-        this.trm_congig = trm_congig;
-        this.trm_clase = trm_clase;
-        this.trm_conduc = trm_conduc;
-        this.trm_distan = trm_distan;
-        this.trm_estado = trm_estado;
-        this.trm_observ = trm_observ;
+    public clsTramo() {
     }
 
     public String getTrm_apoini() {
@@ -62,5 +52,41 @@ public class clsTramo {
 
     public String getTrm_observ() {
         return trm_observ;
+    }
+
+    public void setTrm_apoini(String trm_apoini) {
+        this.trm_apoini = trm_apoini;
+    }
+
+    public void setTrm_apofin(String trm_apofin) {
+        this.trm_apofin = trm_apofin;
+    }
+
+    public void setCir_codigo(String cir_codigo) {
+        this.cir_codigo = cir_codigo;
+    }
+
+    public void setTrm_congig(String trm_congig) {
+        this.trm_congig = trm_congig;
+    }
+
+    public void setTrm_clase(String trm_clase) {
+        this.trm_clase = trm_clase;
+    }
+
+    public void setTrm_conduc(String trm_conduc) {
+        this.trm_conduc = trm_conduc;
+    }
+
+    public void setTrm_distan(String trm_distan) {
+        this.trm_distan = trm_distan;
+    }
+
+    public void setTrm_estado(String trm_estado) {
+        this.trm_estado = trm_estado;
+    }
+
+    public void setTrm_observ(String trm_observ) {
+        this.trm_observ = trm_observ;
     }
 }

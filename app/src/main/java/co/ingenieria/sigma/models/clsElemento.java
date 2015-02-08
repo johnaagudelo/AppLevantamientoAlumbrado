@@ -11,11 +11,7 @@ public class clsElemento{
     private String ele_latitu;
     private String ele_direcc;
 
-    public clsElemento(String ele_codigo, String ele_longit, String ele_latitu,String ele_direcc){
-        this.ele_codigo =ele_codigo;
-        this.ele_latitu = ele_latitu;
-        this.ele_longit = ele_longit;
-        this.ele_direcc = ele_direcc;
+    public clsElemento() {
     }
 
     public String getEle_codigo() {
@@ -33,4 +29,22 @@ public class clsElemento{
     public String getEle_longit() {
         return ele_longit;
     }
+
+    public void setEle_codigo(String ele_codigo) {
+        this.ele_codigo = ele_codigo;
+    }
+
+    public void setEle_longit(String ele_longit) {
+        this.ele_longit = ele_longit;
+    }
+
+    public void setEle_latitu(String ele_latitu) {
+        this.ele_latitu = ele_latitu;
+    }
+
+    public void setEle_direcc(String ele_direcc) {
+        this.ele_direcc = ele_direcc;
+    }
+
+
 }

@@ -22,5 +22,11 @@ public class clsLogin {
         return usuario;
     }
 
+    public void setUsuario(String usuario) {
+        this.usuario = usuario;
+    }
 
+    public void setPass(String pass) {
+        this.pass = pass;
+    }
 }

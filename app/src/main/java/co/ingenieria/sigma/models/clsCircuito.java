@@ -8,9 +8,7 @@ public class clsCircuito {
     private String cir_codigo;
     private String tra_codigo;
 
-    public clsCircuito(String cir_codigo, String tra_codigo) {
-        this.cir_codigo = cir_codigo;
-        this.tra_codigo = tra_codigo;
+    public clsCircuito() {
     }
 
     public String getCir_codigo() {
@@ -19,5 +17,13 @@ public class clsCircuito {
 
     public String getTra_codigo() {
         return tra_codigo;
+    }
+
+    public void setCir_codigo(String cir_codigo) {
+        this.cir_codigo = cir_codigo;
+    }
+
+    public void setTra_codigo(String tra_codigo) {
+        this.tra_codigo = tra_codigo;
     }
 }

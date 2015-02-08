@@ -18,21 +18,7 @@ public class clsTransformador {
     private String tra_lintie;
     private String tra_marca;
 
-    public clsTransformador(String tra_codigo,String apo_codigo, String tra_etique, String tra_capkva, String tra_volpri,
-                            String tra_volseg, String tra_numfac, String tra_tipmen, String tra_usu, String tra_fotcon,
-                            String tra_lintie, String tra_marca){
-        this.tra_codigo = tra_codigo;
-        this.apo_codigo = apo_codigo;
-        this.tra_etique = tra_etique;
-        this.tra_capkva = tra_capkva;
-        this.tra_volpri = tra_volpri;
-        this.tra_volseg = tra_volseg;
-        this.tra_numfac = tra_numfac;
-        this.tra_tipmen = tra_tipmen;
-        this.tra_usu = tra_usu;
-        this.tra_fotcon = tra_fotcon;
-        this.tra_lintie = tra_lintie;
-        this.tra_marca = tra_marca;
+    public clsTransformador() {
     }
 
     public String getApo_codigo() {
@@ -83,6 +69,53 @@ public class clsTransformador {
         return tra_volseg;
     }
 
+    public void setTra_codigo(String tra_codigo) {
+        this.tra_codigo = tra_codigo;
+    }
+
+    public void setApo_codigo(String apo_codigo) {
+        this.apo_codigo = apo_codigo;
+    }
+
+    public void setTra_etique(String tra_etique) {
+        this.tra_etique = tra_etique;
+    }
+
+    public void setTra_capkva(String tra_capkva) {
+        this.tra_capkva = tra_capkva;
+    }
+
+    public void setTra_volpri(String tra_volpri) {
+        this.tra_volpri = tra_volpri;
+    }
+
+    public void setTra_volseg(String tra_volseg) {
+        this.tra_volseg = tra_volseg;
+    }
+
+    public void setTra_numfac(String tra_numfac) {
+        this.tra_numfac = tra_numfac;
+    }
+
+    public void setTra_tipmen(String tra_tipmen) {
+        this.tra_tipmen = tra_tipmen;
+    }
+
+    public void setTra_usu(String tra_usu) {
+        this.tra_usu = tra_usu;
+    }
+
+    public void setTra_fotcon(String tra_fotcon) {
+        this.tra_fotcon = tra_fotcon;
+    }
+
+    public void setTra_lintie(String tra_lintie) {
+        this.tra_lintie = tra_lintie;
+    }
+
+    public void setTra_marca(String tra_marca) {
+        this.tra_marca = tra_marca;
+    }
 }
 
 
