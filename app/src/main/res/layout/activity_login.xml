@@ -23,6 +23,7 @@
         android:textColorHint="@color/accent_button"
         android:textColor="@color/accent_button"
         android:hint="@string/usuario"
+        android:inputType="text"
         android:textStyle="normal|bold|italic"
         android:typeface="serif" />
 
@@ -44,7 +45,7 @@
         android:id="@+id/btn_login"
         android:background="@color/accent_button"
         android:textColor="@color/primary_dark"
-        android:onClick="login()"
+        android:onClick="login"
         />
 
     <ImageView

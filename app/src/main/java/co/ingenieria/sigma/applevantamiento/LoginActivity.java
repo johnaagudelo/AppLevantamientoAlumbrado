@@ -2,6 +2,7 @@ package co.ingenieria.sigma.applevantamiento;
 
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.support.v7.app.ActionBarActivity;
@@ -15,8 +16,8 @@ import co.ingenieria.sigma.models.clsLogin;
 
 public class LoginActivity extends ActionBarActivity {
 
-    private static String usuario = "johnaagudelo";
-    private static String pass = "123";
+    static String USUARIO = "johnaagudelo";
+    static String PASS = "123";
     EditText edi_usuario;
     EditText edi_pass;
 
@@ -29,13 +30,17 @@ public class LoginActivity extends ActionBarActivity {
     }
 
     public void login(View view){
-        if(edi_usuario.getText().equals("")) {
-            if(edi_pass.getText().equals("")) {
-                if (edi_usuario.getText().equals(usuario) && edi_pass.getText().equals(pass)) {
+        if(!edi_usuario.getText().toString().isEmpty()) {
+            if(!edi_pass.getText().toString().isEmpty()) {
+                if (edi_usuario.getText().toString().equals(USUARIO) && edi_pass.getText().toString().equals(PASS)) {
                     SharedPreferences login = getSharedPreferences("Login_Usuario", Context.MODE_PRIVATE);
                     SharedPreferences.Editor editor = login.edit();
                     editor.putString("usuario", edi_usuario.getText().toString());
                     editor.putString("clave", edi_pass.getText().toString());
+                    editor.commit();
+
+                    Intent abrirActividadPrincipal = new Intent(this, PrincipalActivity.class);
+                    startActivity(abrirActividadPrincipal);
                 } else {
                     Toast.makeText(this, "Usuario Incorrecto", Toast.LENGTH_LONG).show();
                 }
