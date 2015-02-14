@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="co.ingenieria.sigma.applevantamiento" >
 
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -20,9 +23,22 @@
             android:name=".PrincipalActivity"
             android:label="@string/title_activity_principal" >
         </activity>
+        <activity
+            android:name=".ApoyoActivity"
+            android:label="@string/title_activity_apoyo"
+            android:parentActivityName=".PrincipalActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="co.ingenieria.sigma.applevantamiento.PrincipalActivity" />
+        </activity>
+        <activity
+            android:name=".TransformadorActivity"
+            android:label="@string/title_activity_transformador"
+            android:parentActivityName=".PrincipalActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="co.ingenieria.sigma.applevantamiento.PrincipalActivity" />
+        </activity>
     </application>
-
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
-    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
 
 </manifest>

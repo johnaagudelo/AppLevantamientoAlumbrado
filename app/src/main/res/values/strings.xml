@@ -5,7 +5,43 @@
     <string name="action_settings">Settings</string>
     <string name="usuario">Nombre de Usuario</string>
     <string name="Clave">Ingrese la clave</string>
-    <string name="title_activity_principal">PrincipalActivity</string>
+    <string name="title_activity_principal">MENÚ PRINCIPAL</string>
     <string name="hello_world">Hello world!</string>
+    <string name="title_activity_apoyo">APOYO</string>
+
+    <!-- String de los Botones -->
+    <string name="lbl_guardar">Guardar</string>
+
+    <!-- String de la Actividad Apoyo -->
+    <string name="lbl_latitud">Latitud:</string>
+    <string name="lbl_longitud">Longitud:</string>
+    <string name="lbl_codigo">Código:</string>
+    <string name="lbl_direccion">Dirección:</string>
+    <string name="lbl_retenida">Retenida:</string>
+    <string name="lbl_ubicacion">Ubicación:</string>
+    <string name="lbl_estado">Estado:</string>
+    <string name="lbl_tipo">Tipo:</string>
+    <string name="lbl_configuracion">Configuración:</string>
+    <string name="lbl_marca">Marca:</string>
+    <string name="lbl_carga">Carga:</string>
+    <string name="lbl_base">Base:</string>
+    <string name="lbl_canasta">Canasta:</string>
+    <string name="lbl_material">Material:</string>
+    <string name="lbl_altura">Altura:</string>
+
+    <!-- String de Transformador -->
+    <string name="lbl_Codigo_Apoyo">Código Apoyo:</string>
+    <string name="lbl_Codigo_Trans">Código Transformafor:</string>
+    <string name="lbl_Etiqueta">Etiqueta:</string>
+    <string name="lbl_Capacidad">Capacidad KVA:</string>
+    <string name="lbl_VoltajePrim">Voltaje Primario:</string>
+    <string name="lbl_VoltajeSec">Voltaje Secundario:</string>
+    <string name="lbl_Numero_Fases">Número de Fases:</string>
+    <string name="lbl_Tipo_Montaje">Tipo Montaje:</string>
+    <string name="lbl_Uso">Uso:</string>
+    <string name="lbl_Foto_Control">Foto Control:</string>
+    <string name="lbl_Linea_Tierra">Línea a Tierra:</string>
+    <string name="lbl_Marca">Marca:</string>
+    <string name="title_activity_transformador">TRANSFORMADOR</string>
 
 </resources>

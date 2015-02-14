@@ -46,11 +46,13 @@
                     <Button
                         android:text="APOYO"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        android:onClick="FrmApoyo"/>
                     <Button
                         android:text="TRANSFORMADOR"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        android:onClick="FrmTransformador" />
                     <Button
                         android:text="CAMARA"
                         android:layout_width="match_parent"
