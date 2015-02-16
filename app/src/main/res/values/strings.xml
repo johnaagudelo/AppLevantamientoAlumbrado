@@ -15,7 +15,7 @@
     <!-- String de la Actividad Apoyo -->
     <string name="lbl_latitud">Latitud:</string>
     <string name="lbl_longitud">Longitud:</string>
-    <string name="lbl_codigo">Código:</string>
+    <string name="lbl_codigo">Código Apoyo:</string>
     <string name="lbl_direccion">Dirección:</string>
     <string name="lbl_retenida">Retenida:</string>
     <string name="lbl_ubicacion">Ubicación:</string>
@@ -43,5 +43,38 @@
     <string name="lbl_Linea_Tierra">Línea a Tierra:</string>
     <string name="lbl_Marca">Marca:</string>
     <string name="title_activity_transformador">TRANSFORMADOR</string>
+
+    <!-- String de CAMARA -->
+    <string name="lbl_Codigo_Camara">Código Cámara:</string>
+    <string name="lbl_Tapa">Tapa:</string>
+    <string name="lbl_Diametro_Tapa">Diametro Tapa:</string>
+    <string name="lbl_Diametro_Camara">Diametro Cámara:</string>
+    <string name="lbl_Configuracion">Configuración:</string>
+    <string name="lbl_Observaciones">Observaciones:</string>
+    <string name="title_activity_camara">CAMARA</string>
+
+    <!-- String de LUMINARIA -->
+    <string name="lbl_Codigo_Luminaria">Código Luminaria:</string>
+    <string name="lbl_Codigo_Circuito">Código Circuito:</string>
+    <string name="lbl_Proteccion">Protección:</string>
+    <string name="lbl_Conector">Conector:</string>
+    <string name="lbl_Estado_Bombillo">Estado Bombillo:</string>
+    <string name="lbl_Estado_Luminaria">Estado Luminaria:</string>
+    <string name="lbl_Fotocelda">Fotocelda:</string>
+    <string name="lbl_Tipo_Brazo">Tipo Brazo:</string>
+    <string name="title_activity_luminaria">LUMINARIA</string>
+
+    <!-- String de CIRCUITO -->
+    <string name="lbl_Codigo_Transformador">Código Transformador:</string>
+    <string name="title_activity_circuito">CIRCUITO</string>
+
+    <!-- String de TRAMO -->
+    <string name="lbl_Apoyo_Inicial">Apoyo Inicial:</string>
+    <string name="lbl_Apoyo_Final">Apoyo Final:</string>
+    <string name="lbl_Clase">Clase:</string>
+    <string name="lbl_Conductor">Conductor:</string>
+    <string name="lbl_Distancia">Distancia (Metros):</string>
+    <string name="lbl_Estado">Estado:</string>
+    <string name="title_activity_tramo">TRAMO</string>
 
 </resources>

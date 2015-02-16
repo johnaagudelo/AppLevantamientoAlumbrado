@@ -39,6 +39,38 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="co.ingenieria.sigma.applevantamiento.PrincipalActivity" />
         </activity>
+        <activity
+            android:name=".CamaraActivity"
+            android:label="@string/title_activity_camara"
+            android:parentActivityName=".PrincipalActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="co.ingenieria.sigma.applevantamiento.PrincipalActivity" />
+        </activity>
+        <activity
+            android:name=".LuminariaActivity"
+            android:label="@string/title_activity_luminaria"
+            android:parentActivityName=".PrincipalActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="co.ingenieria.sigma.applevantamiento.PrincipalActivity" />
+        </activity>
+        <activity
+            android:name=".CircuitoActivity"
+            android:label="@string/title_activity_circuito"
+            android:parentActivityName=".PrincipalActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="co.ingenieria.sigma.applevantamiento.PrincipalActivity" />
+        </activity>
+        <activity
+            android:name=".TramoActivity"
+            android:label="@string/title_activity_tramo"
+            android:parentActivityName=".PrincipalActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="co.ingenieria.sigma.applevantamiento.PrincipalActivity" />
+        </activity>
     </application>
 
 </manifest>
