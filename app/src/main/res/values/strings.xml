@@ -6,8 +6,10 @@
     <string name="usuario">Nombre de Usuario</string>
     <string name="Clave">Ingrese la clave</string>
     <string name="title_activity_principal">MENÚ PRINCIPAL</string>
-    <string name="hello_world">Hello world!</string>
-    <string name="title_activity_apoyo">APOYO</string>
+    <string name="btn_aceptar">Aceptar</string>
+
+    <!-- mENSAJES DE aLERTA-->
+    <string name="msn_errorLogin">EL USUARIO NO EXISTE</string>
 
     <!-- String de los Botones -->
     <string name="lbl_guardar">Guardar</string>
@@ -28,6 +30,7 @@
     <string name="lbl_canasta">Canasta:</string>
     <string name="lbl_material">Material:</string>
     <string name="lbl_altura">Altura:</string>
+    <string name="title_activity_apoyo">APOYO</string>
 
     <!-- String de Transformador -->
     <string name="lbl_Codigo_Apoyo">Código Apoyo:</string>
