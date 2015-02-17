@@ -10,6 +10,8 @@
 
     <!-- mENSAJES DE aLERTA-->
     <string name="msn_errorLogin">EL USUARIO NO EXISTE</string>
+    <string name="msn_conexionInternet">NO TIENE CONEXION A INTERNET</string>
+    <string name="msn_datosLogin">INGRESE DATOS LOGIN</string>
 
     <!-- String de los Botones -->
     <string name="lbl_guardar">Guardar</string>

@@ -35,7 +35,7 @@ public class LoginActivity extends ActionBarActivity {
         edi_pass = (EditText) findViewById(R.id.clave);
     }
 
-    @Override
+    /*@Override
     protected void onResume() {
         super.onResume();
 
@@ -44,11 +44,11 @@ public class LoginActivity extends ActionBarActivity {
             Intent intent = new Intent(getApplicationContext(), PrincipalActivity.class);
             startActivity(intent);
         }
-    }
+    }*/
 
     public void login(View view){
-        if(!edi_usuario.getText().toString().isEmpty() ||!edi_pass.getText().toString().isEmpty() ) {
-
+        if(hayInternet()) {
+            if (!edi_usuario.getText().toString().isEmpty() || !edi_pass.getText().toString().isEmpty()) {
                 if (edi_usuario.getText().toString().equals(USUARIO) && edi_pass.getText().toString().equals(PASS)) {
 
                     SharedPreferences.Editor editor = splogin.edit();
@@ -61,12 +61,15 @@ public class LoginActivity extends ActionBarActivity {
                 } else {
                     clsUtilidades.mostrarAlerta(this, getResources().getString(R.string.msn_errorLogin));
                 }
+            } else {
+                clsUtilidades.mostrarAlerta(this, getResources().getString(R.string.msn_datosLogin));
+            }
         }else{
-            Toast.makeText(this, "Ingrese los datos", Toast.LENGTH_LONG).show();
+            clsUtilidades.mostrarAlerta(this, getResources().getString(R.string.msn_conexionInternet));
         }
     }
 
-    private boolean hayInternet() {
+   private boolean hayInternet() {
         ConnectivityManager cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
         if (cm.getActiveNetworkInfo() != null
                 && cm.getActiveNetworkInfo().isAvailable()
@@ -81,8 +84,10 @@ public class LoginActivity extends ActionBarActivity {
 
         @Override
         protected Void doInBackground(clsLogin... params) {
+
             return null;
         }
+
     }
 
 
