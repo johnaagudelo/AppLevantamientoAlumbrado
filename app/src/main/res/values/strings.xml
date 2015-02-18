@@ -12,6 +12,8 @@
     <string name="msn_errorLogin">EL USUARIO NO EXISTE</string>
     <string name="msn_conexionInternet">NO TIENE CONEXION A INTERNET</string>
     <string name="msn_datosLogin">INGRESE DATOS LOGIN</string>
+    <string name="msn_titleLogin">Cargando</string>
+    <string name="msn_mensajeLogin">Iniciando sesión...</string>
 
     <!-- String de los Botones -->
     <string name="lbl_guardar">Guardar</string>

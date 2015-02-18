@@ -11,8 +11,8 @@ import co.ingenieria.sigma.applevantamiento.R;
  */
 public class clsUtilidades {
     private static final String URL_BACKEND = "https//www.alumbradospublicos.co";
-    private static final String URL_DIR = URL_BACKEND+"/Aplicacion/herramientas/opraciones/";
-    private static final String URL_FACHADA = URL_DIR + "fachada.php";
+    private static final String URL_DIR = URL_BACKEND+"/Aplicacion/herramientas/operaciones/";
+    public static final String URL_FACHADA = URL_DIR + "fachada.php";
 
     public static void mostrarAlerta(Activity activity, String message){
         AlertDialog.Builder alert = new AlertDialog.Builder(activity);
