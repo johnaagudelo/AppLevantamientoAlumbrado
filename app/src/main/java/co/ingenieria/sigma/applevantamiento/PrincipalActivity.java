@@ -29,7 +29,7 @@ public class PrincipalActivity extends ActionBarActivity {
         WebView myWebView = (WebView) findViewById(R.id.viewpage);
         myWebView.getSettings().setJavaScriptEnabled(true);
         myWebView.setWebViewClient(new WebViewClient());
-        myWebView.loadUrl("http://www.google.com");
+        myWebView.loadUrl("http://laofertaquequieres.co/Geomarketing/FUNLogin/PRELoginAutomatico?sistema=SIS_40&login=general&passwd=general");
 
         Resources res = getResources();
 

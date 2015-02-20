@@ -14,6 +14,9 @@
     <string name="msn_datosLogin">INGRESE DATOS LOGIN</string>
     <string name="msn_titleLogin">Cargando</string>
     <string name="msn_mensajeLogin">Iniciando sesión...</string>
+    <string name="camara">Camara</string>
+    <string name="editar">Editar</string>
+    <string name="fotoapoyo">Foto Apoyo</string>
 
     <!-- String de los Botones -->
     <string name="lbl_guardar">Guardar</string>

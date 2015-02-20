@@ -15,6 +15,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -58,7 +59,9 @@ public class LoginActivity extends ActionBarActivity {
     }*/
 
     public void login(View view){
-        if(hayInternet()) {
+        Intent i = new Intent(this, PrincipalActivity.class);
+        startActivity(i);
+        /*if(hayInternet()) {
             if (!edi_usuario.getText().toString().isEmpty() || !edi_pass.getText().toString().isEmpty()) {
                 clsLogin datosLogueo = new clsLogin(edi_usuario.getText().toString(),edi_pass.getText().toString());
                 new clsAsincTaskLogueo().execute(datosLogueo);
@@ -67,7 +70,7 @@ public class LoginActivity extends ActionBarActivity {
             }
         }else{
             clsUtilidades.mostrarAlerta(this, getResources().getString(R.string.msn_conexionInternet));
-        }
+        }*/
     }
 
    private boolean hayInternet() {
@@ -95,11 +98,13 @@ public class LoginActivity extends ActionBarActivity {
         @Override
         protected Boolean doInBackground(clsLogin... params) {
             //Construimos los datos de login formato JSON
+            JSONArray respuesta;
             JSONObject datoLogin = new JSONObject();
             try {
                 datoLogin.put("Usuario", params[0].getUsuario());
                 datoLogin.put("pass", Integer.parseInt(params[0].getPass()));
-                servicio.conectar(datoLogin.toString());
+                respuesta = servicio.conectar(datoLogin.toString());
+                //validar la respuesta
             } catch (JSONException e) {
                 e.printStackTrace();
             }

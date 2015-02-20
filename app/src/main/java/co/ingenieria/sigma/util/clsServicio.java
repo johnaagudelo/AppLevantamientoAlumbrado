@@ -5,6 +5,7 @@ import org.apache.http.HttpResponse;
 import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.client.methods.HttpPost;
+import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -27,12 +28,14 @@ public class clsServicio {
 
     public JSONArray conectar(String datos) {
         try {
+
             DefaultHttpClient client = new DefaultHttpClient();
-            HttpPost request = new HttpPost(clsUtilidades.URL_FACHADA);
-            UrlEncodedFormEntity encodeEntity = null;
-            HttpResponse response = client.execute(request);
-            HttpEntity entity = response.getEntity();
-            stream = entity.getContent();
+            HttpPost post = new HttpPost(clsUtilidades.URL_FACHADA);
+            StringEntity entity = new StringEntity(datos);
+            post.setEntity(entity);
+            HttpResponse response = client.execute(post);
+            HttpEntity respuesta = response.getEntity();
+            stream = respuesta.getContent();
             BufferedReader reader = new BufferedReader(new InputStreamReader(stream, "UTF-8"), 8);
             StringBuilder sb = new StringBuilder();
             sb.append(reader.readLine() + "\n");
