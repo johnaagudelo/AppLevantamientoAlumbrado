@@ -31,7 +31,8 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
-                    android:text="---"/>
+                    android:text="---"
+                    android:id="@+id/Latitud"/>
 
                 <TextView
                     android:layout_width="match_parent"
@@ -41,7 +42,8 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
-                    android:text="---"/>
+                    android:text="---"
+                    android:id="@+id/Longitud"/>
             </LinearLayout>
 
             <LinearLayout
@@ -87,7 +89,8 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:id="@+id/CodApoyo"/>
 
         </LinearLayout>
 
@@ -105,7 +108,8 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:id="@+id/Direccion"/>
 
         </LinearLayout>
 
@@ -123,7 +127,8 @@
             <Spinner
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:layout_weight="1"></Spinner>
+                android:layout_weight="1"
+                android:id="@+id/Retenida"/>
 
         </LinearLayout>
 
@@ -141,7 +146,8 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:id="@+id/Ubicacion"/>
 
 
         </LinearLayout>
@@ -160,7 +166,8 @@
             <Spinner
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:layout_weight="1"></Spinner>
+                android:layout_weight="1"
+                android:id="@+id/Estado"/>
 
         </LinearLayout>
 
@@ -178,7 +185,8 @@
             <Spinner
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:layout_weight="1"></Spinner>
+                android:layout_weight="1"
+                android:id="@+id/Tipo"/>
 
         </LinearLayout>
 
@@ -196,7 +204,8 @@
             <Spinner
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:layout_weight="1"></Spinner>
+                android:layout_weight="1"
+                android:id="@+id/Configuracion"/>
 
         </LinearLayout>
 
@@ -214,7 +223,8 @@
             <Spinner
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:layout_weight="1"></Spinner>
+                android:layout_weight="1"
+                android:id="@+id/Marca"/>
 
         </LinearLayout>
 
@@ -232,7 +242,8 @@
             <Spinner
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:layout_weight="1"></Spinner>
+                android:layout_weight="1"
+                android:id="@+id/Carga"/>
 
         </LinearLayout>
 
@@ -250,7 +261,8 @@
             <Spinner
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:layout_weight="1"></Spinner>
+                android:layout_weight="1"
+                android:id="@+id/Base"/>
 
         </LinearLayout>
 
@@ -268,7 +280,8 @@
             <Spinner
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:layout_weight="1"></Spinner>
+                android:layout_weight="1"
+                android:id="@+id/Canasta"/>
 
         </LinearLayout>
 
@@ -286,7 +299,8 @@
             <Spinner
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:layout_weight="1"></Spinner>
+                android:layout_weight="1"
+                android:id="@+id/Material"/>
 
         </LinearLayout>
 
@@ -304,7 +318,8 @@
             <Spinner
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:layout_weight="1"></Spinner>
+                android:layout_weight="1"
+                android:id="@+id/Altura"/>
 
         </LinearLayout>
 
@@ -312,7 +327,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="@string/lbl_guardar"/>
+            android:text="@string/lbl_guardar"
+            android:id="@+id/Guardar"
+            android:onClick="identifyObjectcs"/>
 
      </LinearLayout>
 

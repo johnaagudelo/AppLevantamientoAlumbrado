@@ -13,6 +13,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.io.File;
@@ -25,6 +26,7 @@ import co.ingenieria.sigma.util.BitmapManager;
 
 public class ApoyoActivity extends ActionBarActivity {
 
+
     private static final int TOMAR_FOTO = 1;
     private static final int SELECCIONAR_FOTO = 2;
     private static final String NOMBRE_ALBUM = "Levantamiento";
@@ -33,6 +35,24 @@ public class ApoyoActivity extends ActionBarActivity {
     private Bitmap mImagenBitmap;
     private ImageView mImageView;
     private String pathFoto;
+    //variables de clase "agregadas fabian"
+    private  TextView longitud;
+    private  TextView latitud;
+    private  TextView codApoyo;
+    private  TextView direccion;
+    private  TextView retenida;
+    private  TextView ubicacion;
+    private  TextView estado;
+    private  TextView tipo;
+    private  TextView configuracion;
+    private  TextView marca;
+    private  TextView carga;
+    private  TextView base;
+    private  TextView canasta;
+    private  TextView material;
+    private  TextView altura;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +60,15 @@ public class ApoyoActivity extends ActionBarActivity {
         setContentView(R.layout.activity_apoyo);
         mImagenBitmap = null;
         mImageView = (ImageView)findViewById(R.id.ImageApoyo);
+    }
+
+    public void identifyObjectcs(View v){
+
+        latitud = (TextView)findViewById(R.id.Latitud);
+        String LatitudDos = latitud.getText().toString();
+        longitud = (TextView)findViewById(R.id.Longitud);
+        String LongitudDos = longitud.getText().toString();
+
     }
 
     private void TomarFotoCamara(View v){
