@@ -1,14 +1,21 @@
 package co.ingenieria.sigma.applevantamiento;
 
+import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 import android.graphics.Bitmap;
+import android.location.Location;
+import android.location.LocationListener;
+import android.location.LocationManager;
 import android.net.Uri;
 import android.provider.MediaStore;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -22,6 +29,7 @@ import java.util.List;
 
 import co.ingenieria.sigma.util.AlbumStorageDirFactory;
 import co.ingenieria.sigma.util.BitmapManager;
+import co.ingenieria.sigma.util.clsUtilidades;
 
 
 public class ApoyoActivity extends ActionBarActivity {
@@ -52,6 +60,11 @@ public class ApoyoActivity extends ActionBarActivity {
     private  TextView material;
     private  TextView altura;
 
+    //variable manager localizacion
+    private LocationManager locManager;
+    private LocationListener locListener;
+    private AlertDialog.Builder adb;
+
 
 
     @Override
@@ -60,15 +73,67 @@ public class ApoyoActivity extends ActionBarActivity {
         setContentView(R.layout.activity_apoyo);
         mImagenBitmap = null;
         mImageView = (ImageView)findViewById(R.id.ImageApoyo);
+        latitud = (TextView)findViewById(R.id.Latitud);
+        longitud = (TextView)findViewById(R.id.Longitud);
+
+
+
+
+    }
+
+    @Override
+    protected void onResume(){
+        super.onResume();
+            comenzarLocalizacion();
     }
 
     public void identifyObjectcs(View v){
-
-        latitud = (TextView)findViewById(R.id.Latitud);
         String LatitudDos = latitud.getText().toString();
-        longitud = (TextView)findViewById(R.id.Longitud);
         String LongitudDos = longitud.getText().toString();
 
+    }
+
+    private void comenzarLocalizacion()
+    {
+        locManager =(LocationManager)getSystemService(Context.LOCATION_SERVICE);
+        //Obtenemos la última posición conocida
+        Location loc = locManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
+        //Mostramos la última posición conocida
+        mostrarPosicion(loc);
+        //Nos registramos para recibir actualizaciones de la posición
+        locListener = new LocationListener() {
+            public void onLocationChanged(Location location) {
+                mostrarPosicion(location);
+            }
+            public void onProviderDisabled(String provider){
+                latitud.setText("Sin GPS");
+                longitud.setText("Sin GPS");
+            }
+            public void onProviderEnabled(String provider){
+                latitud.setText("Obteniendo X");
+                longitud.setText("Obteniendo Y");
+            }
+            public void onStatusChanged(String provider, int status, Bundle extras){
+                Log.i("", "Estado Proveedor: " + status);
+            }
+        };
+
+        locManager.requestLocationUpdates(
+                LocationManager.GPS_PROVIDER, 1000, 1, locListener);
+    }
+
+    private void mostrarPosicion(Location loc) {
+        if(loc != null)
+        {
+            latitud.setText(String.valueOf(loc.getLatitude()));
+            longitud.setText(String.valueOf(loc.getLongitude()));
+            Log.i("", String.valueOf(loc.getLatitude() + " - " + String.valueOf(loc.getLongitude())));
+        }
+        else
+        {
+            latitud.setText("(sin_datos)");
+            longitud.setText("(sin_datos)");
+        }
     }
 
     private void TomarFotoCamara(View v){
