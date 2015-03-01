@@ -90,7 +90,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:id="@+id/CodApoyo"/>
+                android:id="@+id/apoCodigo"/>
 
         </LinearLayout>
 
@@ -109,7 +109,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:id="@+id/Direccion"/>
+                android:id="@+id/apoDireccion"/>
 
         </LinearLayout>
 
@@ -128,7 +128,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:layout_weight="1"
-                android:id="@+id/Retenida"/>
+                android:id="@+id/apoRetenida"/>
 
         </LinearLayout>
 
@@ -147,7 +147,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:id="@+id/Ubicacion"/>
+                android:id="@+id/apoUbicacion"/>
 
 
         </LinearLayout>
@@ -167,7 +167,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:layout_weight="1"
-                android:id="@+id/Estado"/>
+                android:id="@+id/apoEstado"/>
 
         </LinearLayout>
 
@@ -186,7 +186,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:layout_weight="1"
-                android:id="@+id/Tipo"/>
+                android:id="@+id/apoTipo"/>
 
         </LinearLayout>
 
@@ -205,7 +205,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:layout_weight="1"
-                android:id="@+id/Configuracion"/>
+                android:id="@+id/apoConfiguracion"/>
 
         </LinearLayout>
 
@@ -224,7 +224,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:layout_weight="1"
-                android:id="@+id/Marca"/>
+                android:id="@+id/apoMarca"/>
 
         </LinearLayout>
 
@@ -243,7 +243,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:layout_weight="1"
-                android:id="@+id/Carga"/>
+                android:id="@+id/apoCarga"/>
 
         </LinearLayout>
 
@@ -262,7 +262,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:layout_weight="1"
-                android:id="@+id/Base"/>
+                android:id="@+id/apoBase"/>
 
         </LinearLayout>
 
@@ -281,7 +281,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:layout_weight="1"
-                android:id="@+id/Canasta"/>
+                android:id="@+id/apoCanasta"/>
 
         </LinearLayout>
 
@@ -300,7 +300,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:layout_weight="1"
-                android:id="@+id/Material"/>
+                android:id="@+id/apoMaterial"/>
 
         </LinearLayout>
 
@@ -319,7 +319,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:layout_weight="1"
-                android:id="@+id/Altura"/>
+                android:id="@+id/apoAltura"/>
 
         </LinearLayout>
 
@@ -329,7 +329,7 @@
             android:layout_gravity="center"
             android:text="@string/lbl_guardar"
             android:id="@+id/Guardar"
-            android:onClick="identifyObjectcs"/>
+            android:onClick="GuardarApoyo"/>
 
      </LinearLayout>
 

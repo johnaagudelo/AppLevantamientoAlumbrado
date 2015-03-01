@@ -56,19 +56,23 @@
                     <Button
                         android:text="CAMARA"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        android:onClick="FrmCamara"/>
                     <Button
                         android:text="LUMINARIA"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        android:onClick="FrmLuminaria"/>
                     <Button
                         android:text="CIRCUITO"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        android:onClick="FrmCircuito"/>
                     <Button
                         android:text="TRAMO"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        android:onClick="FrmTramo"/>
 
                 </LinearLayout>
                 

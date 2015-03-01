@@ -83,6 +83,26 @@ public class PrincipalActivity extends ActionBarActivity {
         startActivity(abrirFrmTransformador);
     }
 
+    public void FrmCamara(View view){
+        Intent abrirFrmCamara = new Intent(this, CamaraActivity.class);
+        startActivity(abrirFrmCamara);
+    }
+
+    public void FrmLuminaria(View view){
+        Intent abrirFrmLuminaria = new Intent(this, LuminariaActivity.class);
+        startActivity(abrirFrmLuminaria);
+    }
+
+    public void FrmCircuito(View view){
+        Intent abrirFrmCircuito = new Intent(this, CircuitoActivity.class);
+        startActivity(abrirFrmCircuito);
+    }
+
+    public void FrmTramo(View view){
+        Intent abrirFrmTramo = new Intent(this, TramoActivity.class);
+        startActivity(abrirFrmTramo);
+    }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.

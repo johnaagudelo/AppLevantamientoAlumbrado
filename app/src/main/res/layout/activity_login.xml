@@ -10,9 +10,9 @@
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="150dp"
         android:background="@drawable/logo_geolumina"
-        android:layout_marginBottom="70dp"
+        android:layout_marginBottom="30dp"
         android:layout_marginTop="30dp"/>
 
 
@@ -23,9 +23,7 @@
         android:textColorHint="@color/accent_button"
         android:textColor="@color/accent_button"
         android:hint="@string/usuario"
-        android:inputType="text"
-        android:textStyle="normal|bold|italic"
-        android:typeface="serif" />
+        android:inputType="text" />
 
     <EditText
         android:layout_width="match_parent"
@@ -34,14 +32,13 @@
         android:id="@+id/clave"
         android:hint="@string/Clave"
         android:textColorHint="@color/accent_button"
-        android:textColor="@color/accent_button"
-        android:textStyle="normal|bold|italic"
-        android:typeface="serif" />
+        android:textColor="@color/accent_button" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Login"
+        android:layout_marginTop="10dp"
         android:id="@+id/btn_login"
         android:background="@color/accent_button"
         android:textColor="@color/primary_dark"
@@ -49,9 +46,9 @@
         />
 
     <ImageView
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="30dp"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="70dp"
         android:layout_gravity="center"
         android:background="@drawable/logo_sigma"
         />
