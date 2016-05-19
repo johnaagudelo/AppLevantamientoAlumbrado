@@ -23,7 +23,4 @@ public class clsCircuito {
         this.cir_codigo = cir_codigo;
     }
 
-    public void setTra_codigo(String tra_codigo) {
-        this.tra_codigo = tra_codigo;
-    }
 }
